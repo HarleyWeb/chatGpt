@@ -9,8 +9,9 @@ import {
   MessageInput,
   TypingIndicator,
 } from '@chatscope/chat-ui-kit-react';
-
-const API_KEY ="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"
+import dotenv from 'dotenv'
+dotenv.config()
+const API_KEY =process.env.API_KEY
 
 const App = () => {
   const [messages, setMessages] = useState([
